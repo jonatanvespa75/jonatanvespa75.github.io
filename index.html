@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click & Morfi - Todo lo rico de Cañada</title>
+    <style>
+        :root {
+            --fondo: #121212;
+            --tarjeta: #1e1e1e;
+            --amarillo: #f4b41a;
+            --naranja: #e05314;
+            --texto: #ffffff;
+            --texto-secundario: #aaaaaa;
+            --whatsapp: #25d366;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            background-color: var(--fondo);
+            color: var(--texto);
+            padding-bottom: 30px;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 20px 20px 20px;
+            background: linear-gradient(180deg, rgba(244,180,26,0.1) 0%, rgba(18,18,18,1) 100%);
+        }
+
+        .logo-placeholder {
+            width: 140px;
+            height: 140px;
+            margin: 0 auto 15px auto;
+            background-color: var(--tarjeta);
+            border: 3px solid var(--amarillo);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: var(--amarillo);
+            font-size: 14px;
+            box-shadow: 0 4px 15px rgba(244,180,26,0.3);
+        }
+
+        h1 {
+            font-size: 24px;
+            color: var(--texto);
+            margin-bottom: 5px;
+        }
+
+        .eslogan {
+            font-size: 14px;
+            color: var(--amarillo);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background-color: var(--tarjeta);
+            border-radius: 15px;
+            overflow: hidden;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+            border: 1px solid #2a2a2a;
+        }
+
+        .card-img {
+            width: 100%;
+            height: 180px;
+            background-color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--texto-secundario);
+            font-size: 14px;
+            font-style: italic;
+        }
+
+        .card-info {
+            padding: 20px;
+        }
+
+        .card-title {
+            font-size: 20px;
+            color: var(--amarillo);
+            margin-bottom: 8px;
+        }
+
+        .card-dir {
+            font-size: 14px;
+            color: var(--texto-secundario);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .btn-wp {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background-color: var(--whatsapp);
+            text-decoration: none;
+            padding: 14px;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: transform 0.2s;
+            box-shadow: 0 4px 10px rgba(37,211,102,0.3);
+            color: #fff;
+        }
+
+        .btn-wp:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-placeholder">LOGOTIPO AQUÍ</div>
+        <h1>Click & Morfi</h1>
+        <div class="eslogan">Todo lo rico de Cañada, a un click</div>
+    </header>
+
+    <div class="container">
+
+        <!-- LOCAL 1 -->
+        <div class="card">
+            <div class="card-img">[Foto de la comida de La Roti del Feis]</div>
+            <div class="card-info">
+                <div class="card-title">🍕 La Roti del Feis</div>
+                <div class="card-dir">📍 Valparaíso 343, Cañada de Gómez</div>
+                <a href="https://wa.me¡Hola!%20Vi%20tu%20menú%20en%20Click%20%26%20Morfi%20y%20quiero%20hacerte%20un%20pedido" target="_blank" class="btn-wp">
+                    📱 Pedir por WhatsApp
+                </a>
+            </div>
+        </div>
+
+        <!-- LOCAL 2 -->
+        <div class="card">
+            <div class="card-img">[Foto de la comida de El Chavo de la 9]</div>
+            <div class="card-info">
+                <div class="card-title">🍗 El Chavo de la 9</div>
+                <div class="card-dir">📍 Av. Santa Fe 1188 (esq. Suipacha)</div>
+                <a href="https://wa.me¡Hola!%20Vi%20tu%20menú%20en%20Click%20%26%20Morfi%20y%20quiero%20hacerte%20un%20pedido" target="_blank" class="btn-wp">
+                    📱 Pedir por WhatsApp
+                </a>
+            </div>
+        </div>
+
+        <!-- LOCAL 3 -->
+        <div class="card">
+            <div class="card-img">[Foto de la comida de Como en Casa]</div>
+            <div class="card-info">
+                <div class="card-title">🍲 Como en Casa</div>
+                <div class="card-dir">📍 Ocampo 708, Cañada de Gómez</div>
+                <a href="https://wa.me¡Hola!%20Vi%20tu%20menú%20en%20Click%20%26%20Morfi%20y%20quiero%20hacerte%20un%20pedido" target="_blank" class="btn-wp">
+                    📱 Pedir por WhatsApp
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
