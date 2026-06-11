@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Click & Morfi - Todo lo rico de Cañada</title>
+    <title>Click & Morfi - Todo lo rico de Cañada, a un click</title>
     <style>
         :root {
             --fondo: #121212;
             --tarjeta: #1e1e1e;
-            --amarillo: #f4b41a;
-            --naranja: #e05314;
+            --amarillo: #fdb414;
+            --naranja: #ed5514;
             --texto: #ffffff;
-            --texto-secundario: #aaaaaa;
+            --texto-secundaria: #aaaaaa;
             --whatsapp: #25d366;
         }
 
@@ -32,7 +32,7 @@
         header {
             text-align: center;
             padding: 30px 20px 20px 20px;
-            background: linear-gradient(180deg, rgba(244,180,26,0.1) 0%, rgba(18,18,18,1) 100%);
+            background: linear-gradient(180deg, rgba(244,180,20,0.1) 0%, rgba(18,18,18,1) 100%);
         }
 
         .logo-placeholder {
@@ -48,7 +48,7 @@
             font-weight: bold;
             color: var(--amarillo);
             font-size: 14px;
-            box-shadow: 0 4px 15px rgba(244,180,26,0.3);
+            box-shadow: 0 4px 15px rgba(244,180,20,0.3);
         }
 
         h1 {
@@ -57,78 +57,85 @@
             margin-bottom: 5px;
         }
 
-        .eslogan {
+        .slogan {
             font-size: 14px;
             color: var(--amarillo);
             font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
         }
 
+        /* DISEÑO DE 2 EN 2 (GRILLA RE RESPONSIVE) */
         .container {
-            padding: 20px;
-            max-width: 500px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Esto hace las 2 columnas */
+            gap: 12px;
+            padding: 15px;
+            max-width: 600px;
             margin: 0 auto;
         }
 
         .card {
             background-color: var(--tarjeta);
-            border-radius: 15px;
+            border-radius: 12px;
             overflow: hidden;
-            margin-bottom: 25px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
             border: 1px solid #2a2a2a;
         }
 
         .card-img {
-            width: 100%;
-            height: 180px;
             background-color: #333;
+            height: 100px;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: var(--texto-secundario);
-            font-size: 14px;
-            font-style: italic;
+            text-align: center;
+            padding: 10px;
+            font-size: 11px;
+            color: var(--texto-secundaria);
         }
 
         .card-info {
-            padding: 20px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            justify-content: space-between;
         }
 
         .card-title {
-            font-size: 20px;
+            font-size: 14px;
+            font-weight: bold;
             color: var(--amarillo);
-            margin-bottom: 8px;
+            margin-bottom: 4px;
         }
 
         .card-dir {
-            font-size: 14px;
-            color: var(--texto-secundario);
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            gap: 5px;
+            font-size: 11px;
+            color: var(--texto-secundaria);
+            margin-bottom: 10px;
+            line-height: 1.2;
         }
 
         .btn-wp {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
+            gap: 5px;
             background-color: var(--whatsapp);
-            text-decoration: none;
-            padding: 14px;
-            border-radius: 10px;
-            font-weight: bold;
-            font-size: 16px;
-            transition: transform 0.2s;
-            box-shadow: 0 4px 10px rgba(37,211,102,0.3);
             color: #fff;
+            text-decoration: none;
+            padding: 8px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 11px;
+            transition: transform 0.2s;
+            margin-top: auto;
+            text-align: center;
         }
 
         .btn-wp:active {
-            transform: scale(0.98);
+            transform: scale(0.95);
         }
     </style>
 </head>
@@ -137,7 +144,7 @@
     <header>
         <div class="logo-placeholder">LOGOTIPO AQUÍ</div>
         <h1>Click & Morfi</h1>
-        <div class="eslogan">Todo lo rico de Cañada, a un click</div>
+        <div class="slogan">TODO LO RICO DE CAÑADA, A UN CLICK</div>
     </header>
 
     <div class="container">
@@ -148,8 +155,8 @@
             <div class="card-info">
                 <div class="card-title">🍕 La Roti del Feis</div>
                 <div class="card-dir">📍 Valparaíso 343, Cañada de Gómez</div>
-                <a href="https://wa.me¡Hola!%20Vi%20tu%20menú%20en%20Click%20%26%20Morfi%20y%20quiero%20hacerte%20un%20pedido" target="_blank" class="btn-wp">
-                    📱 Pedir por WhatsApp
+                <a href="https://wa.me" target="_blank" class="btn-wp">
+                    📱 WhatsApp
                 </a>
             </div>
         </div>
@@ -158,10 +165,10 @@
         <div class="card">
             <div class="card-img">[Foto de la comida de El Chavo de la 9]</div>
             <div class="card-info">
-                <div class="card-title">🍗 El Chavo de la 9</div>
-                <div class="card-dir">📍 Av. Santa Fe 1188 (esq. Suipacha)</div>
-                <a href="https://wa.me¡Hola!%20Vi%20tu%20menú%20en%20Click%20%26%20Morfi%20y%20quiero%20hacerte%20un%20pedido" target="_blank" class="btn-wp">
-                    📱 Pedir por WhatsApp
+                <div class="card-title">🥪 El Chavo de la 9</div>
+                <div class="card-dir">📍 Av. Santa Fe 1188, Cañada de Gómez</div>
+                <a href="https://wa.me" target="_blank" class="btn-wp">
+                    📱 WhatsApp
                 </a>
             </div>
         </div>
@@ -172,47 +179,44 @@
             <div class="card-info">
                 <div class="card-title">🍲 Como en Casa</div>
                 <div class="card-dir">📍 Ocampo 708, Cañada de Gómez</div>
-                <a href="https://wa.me¡Hola!%20Vi%20tu%20menú%20en%20Click%20%26%20Morfi%20y%20quiero%20hacerte%20un%20pedido" target="_blank" class="btn-wp">
-                    📱 Pedir por WhatsApp
+                <a href="https://wa.me" target="_blank" class="btn-wp">
+                    📱 WhatsApp
                 </a>
             </div>
         </div>
-                <!-- LOCAL 4: PORKY'S PIZZAS -->
+
+        <!-- LOCAL 4 -->
         <div class="card">
             <div class="card-img">[Foto de la comida de Porky's Pizzas]</div>
             <div class="card-info">
                 <div class="card-title">🍕 Porky's Pizzas</div>
                 <div class="card-dir">📍 Zona Centro, Cañada de Gómez</div>
-                <a href="https://wa.me" target="_blank" class="btn-whatsapp">
-                    📱 Pedir por WhatsApp
+                <a href="https://wa.me" target="_blank" class="btn-wp">
+                    📱 WhatsApp
                 </a>
             </div>
         </div>
 
-        <!-- LOCAL 5: ASAP AMERICAN PIZZAS -->
+        <!-- LOCAL 5 -->
         <div class="card">
             <div class="card-img">[Foto de la comida de ASAP American Pizzas]</div>
             <div class="card-info">
                 <div class="card-title">🍕 ASAP American Pizzas</div>
                 <div class="card-dir">📍 Beltrame 1015, Cañada de Gómez</div>
-                <a href="https://wa.me" target="_blank" class="btn-whatsapp">
-                    📱 Pedir por WhatsApp
+                <a href="https://wa.me" target="_blank" class="btn-wp">
+                    📱 WhatsApp
                 </a>
             </div>
         </div>
 
-        <!-- LOCAL 6: LAS NORTEÑITAS -->
+        <!-- LOCAL 6 -->
         <div class="card">
             <div class="card-img">[Foto de la comida de Las Norteñitas]</div>
             <div class="card-info">
                 <div class="card-title">🍲 Las Norteñitas</div>
                 <div class="card-dir">📍 Ocampo 931, Cañada de Gómez</div>
-                <a href="https://wa.me" target="_blank" class="btn-whatsapp">
-                    📱 Pedir por WhatsApp
-                </a>
-            </div>
-        </div>
-
+                <a href="https://wa.me" target="_blank" class="btn-wp">
+                    📱 WhatsApp
                 </a>
             </div>
         </div>
@@ -221,4 +225,3 @@
 
 </body>
 </html>
-
